@@ -23,5 +23,5 @@ spec:
         name: nginx
         resources:
           requests:
-            cpu: "0.25"
+            cpu: "1"
             memory: "128Mi"

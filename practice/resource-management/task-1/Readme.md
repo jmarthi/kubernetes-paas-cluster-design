@@ -4,7 +4,8 @@ This task combines a quick refresh of your `kubectl` know-how and creation of th
 
 ```bash
 # Manifests is complete, then create it via
-kubectl apply -f <the-file-you-want-to-apply>
+kubectl apply -f resources-demo-app-1.yaml
+kubectl apply -f resources-demo-app-2.yaml
 ```
 
 Check if everything is available:
@@ -13,6 +14,7 @@ Check if everything is available:
 kubectl get ns
 # You need to have the demo-app-1 and demo-app-2 namespaces
 # Check the available quotas
-kubectl get quota -n <namespace>
+kubectl get quota -n demo-app-1
+kubectl get quota -n demo-app-2
 # You need to have one quota resource per demo namespace. As of now we have it created but no quota used.
 ```

@@ -6,15 +6,15 @@ metadata:
     mmelab.io/task: rm-task-1
     mmelab.io/app: demo-app-1
 ---
-apiVersion: ?
+apiVersion: v1
 kind: ResourceQuota
 metadata:
   name: quota
-  ?: demo-app-1
+  namespace: demo-app-1
   labels:
     mmelab.io/task: rm-task-1
     mmelab.io/app: demo-app-1
 spec:
   hard:
-    requests.cpu: "0.2"
+    requests.cpu: "1"
     requests.memory: 1Gi

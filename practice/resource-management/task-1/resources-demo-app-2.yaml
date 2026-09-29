@@ -1,14 +1,14 @@
 apiVersion: v1
 kind: Namespace
 metadata:
-  ?: demo-app-2
+  name: demo-app-2
   labels:
     mmelab.io/task: rm-task-1
     mmelab.io/app: demo-app-2
 ---
 apiVersion: v1
 kind: ResourceQuota
-?:
+metadata:
   name: quota
   namespace: demo-app-2
   labels:
@@ -16,5 +16,5 @@ kind: ResourceQuota
     mmelab.io/app: demo-app-2
 spec:
   hard:
-    requests.cpu: "1"
+    requests.cpu: "2"
     requests.memory: 2Gi

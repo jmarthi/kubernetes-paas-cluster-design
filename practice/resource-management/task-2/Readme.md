@@ -4,13 +4,13 @@ After creating namespaces and quotas, we want to consume the quotas. Please have
 
 ```bash
 # Manifests is complete, then create it via
-kubectl apply -f <the-file-you-want-to-apply>
+kubectl apply -f deployment-demo-app-1.yaml
 ```
 
 Check if the deployment was created:
 
 ```bash
-kubectl get deploy -n <namespace>
+kubectl get deploy -n demo-app-1
 # You need to have one deployment called demo-app-1
 ```
 
@@ -18,8 +18,8 @@ Investigate why we are missing a few pods. Use the following commands as a start
 
 
 ```bash
-kubectl get quota -n <namespace>
-kubectl describe replicaset -n <namespace> <replicaset-name>
+kubectl get quota -n demo-app-1
+kubectl describe replicaset -ndemo-app-1 <replicaset-name>
 
 ```
 
