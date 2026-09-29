@@ -24,6 +24,8 @@ We need to take a note of the public IP address, that was assigned to our Ingres
 kubectl get svc -n ingress-nginx ingress-nginx-controller -o=jsonpath="{.status.loadBalancer.ingress[0].ip}"
 ```
 
+# 57.174.82.188
+
 **ATTENTION**: This IP address is required for other tasks during this course. As previously explained, we are going to use `nip.io` for our hostnames.
 
 After deploying the ingress controller, we can deploy a simple application:

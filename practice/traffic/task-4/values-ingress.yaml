@@ -2,5 +2,7 @@ controller:
   service:
     annotations:
       service.beta.kubernetes.io/azure-load-balancer-health-probe-request-path: /healthz
+defaultBackend:
+  enabled: true
 
 # Please find the correct config here: https://github.com/kubernetes/ingress-nginx/tree/helm-chart-4.15.1/charts/ingress-nginx

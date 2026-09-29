@@ -5,7 +5,7 @@ It depends on the Ingress Controller implementation, but usually a default backe
 But first lets see what happens if we call an endpoint that should definitely not exist (make sure to replace the IP with your own):
 
 ```bash
-curl -v http://non-existing-20.166.220.87.nip.io/
+curl -v http://non-existing-57.174.82.188.nip.io/
 *   Trying 20.166.220.87:80...
 * Connected to non-existing-20.166.220.87.nip.io (20.166.220.87) port 80 (#0)
 > GET / HTTP/1.1
@@ -45,7 +45,7 @@ helm upgrade --install ingress-nginx ingress-nginx \
 After enabling the default backend you should receive the following response:
 
 ```bash
-curl -v http://non-existing-20.166.220.87.nip.io/
+curl -v http://non-existing-57.174.82.188.nip.io/
 *   Trying 20.166.220.87:80...
 * Connected to non-existing-20.166.220.87.nip.io (20.166.220.87) port 80 (#0)
 > GET / HTTP/1.1

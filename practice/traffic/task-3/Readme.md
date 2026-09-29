@@ -7,6 +7,8 @@ Create the ingress manifest:
 kubectl apply -f ingress-advanced.yaml
 ```
 
+# (http://57.174.82.188.nip.io/hello/what-path-it-is)
+
 Make sure to understand and check:
 - What mechanisms are used to modify the HTTP resources
 - What combinations are possible to access the hidden endpoint

@@ -27,7 +27,7 @@ spec:
         mmelab.io/app: demo-app
     spec:
       containers:
-      - image: k8spaasclusterdesign.azurecr.io/demo-app:v0.1
+      - image: christi8m/demo-app:v0.1
         name: demo-app
         ports:
           - containerPort: 8080

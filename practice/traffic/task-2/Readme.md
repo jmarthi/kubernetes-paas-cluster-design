@@ -8,6 +8,8 @@ Now you can expose the application:
 kubectl apply -f ingress.yaml
 ```
 
+# (http://57.174.82.188.nip.io)
+
 Make sure to access the application via your browser and check:
 - HTTP response code is 200
 - Content is `Hello from the demo app!`
